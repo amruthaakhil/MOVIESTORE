@@ -1,0 +1,357 @@
+
+
+html,
+body {
+	height: 100%;
+	font-family: "Montserrat", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	background-color:GhostWhite;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	color: #0a183d;
+	font-weight: 600;
+	line-height: 1;
+}
+
+h1 {
+	font-size: 70px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+p {
+	font-size: 15px;
+	color: #6a7080;
+	line-height: 1.8;
+	font-weight: 500;
+}
+
+img {
+	max-width: 100%;
+}
+ul,
+ol {
+	padding: 0;
+	margin: 0;
+}
+
+.set-bg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
+/* buttons */
+
+.site-btn {
+	display: inline-block;
+	border: none;
+	font-size: 14px;
+	font-weight: 500;
+	min-width: 195px;
+	padding: 23px 20px;
+	border-radius: 50px;
+	text-transform: uppercase;
+	background: #fc0254;
+	color: #fff;
+	line-height: normal;
+	cursor: pointer;
+	text-align: center;
+}
+
+.site-btn.sb-c2 {
+	background: #383b70;
+}
+/*------------------
+Hero section
+ ---------------------*/
+
+.hero-section {
+	overflow: hidden;
+}
+
+.hs-item {
+	height: 724px;
+	padding-bottom: 90px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: #0a183d;
+}
+
+.hs-item h2 {
+	color: #fff;
+	font-size: 70px;
+	margin-bottom: 25px;
+	line-height: 0.9;
+	position: relative;
+	top: 50px;
+	opacity: 0;
+}
+
+.hs-item h2 span {
+	color: #fc0254;
+}
+
+.hs-item p {
+	color: #ffffff;
+	opacity: 0.6;
+	margin-bottom: 50px;
+	position: relative;
+	top: 50px;
+	opacity: 0;
+}
+
+.hs-item .site-btn {
+	position: relative;
+	top: 50px;
+	margin-bottom: 20px;
+	opacity: 0;
+}
+
+.hs-item .sb-c2 {
+	margin-left: 8px;
+}
+
+.hs-item .hs-text {
+	padding-top: 90px;
+	max-width: 475px;
+}
+
+.hr-img img {
+	min-width: 602px;
+	position: relative;
+	left: -34px;
+	top: 50px;
+	opacity: 0;
+}
+
+.owl-item.active .hs-item img,
+.owl-item.active .hs-item h2,
+.owl-item.active .hs-item p,
+.owl-item.active .hs-item .site-btn,
+.owl-item.active .hs-item .site-btn.sb-c2 {
+	top: 0;
+	opacity: 1;
+}
+
+.owl-item.active .hs-item img {
+	-webkit-transition: all 0.5s ease 0.2s;
+	transition: all 0.5s ease 0.2s;
+}
+
+.owl-item.active .hs-item h2 {
+	-webkit-transition: all 0.5s ease 0.4s;
+	transition: all 0.5s ease 0.4s;
+}
+
+.owl-item.active .hs-item p {
+	-webkit-transition: all 0.5s ease 0.6s;
+	transition: all 0.5s ease 0.6s;
+}
+
+.owl-item.active .hs-item .site-btn {
+	-webkit-transition: all 0.5s ease 0.8s;
+	transition: all 0.5s ease 0.8s;
+}
+
+.owl-item.active .hs-item .site-btn.sb-c2 {
+	-webkit-transition: all 0.5s ease 1s;
+	transition: all 0.5s ease 1s;
+}
+
+.hero-slider .owl-dots {
+	position: absolute;
+	bottom: 33px;
+	left: calc(50% - 588px);
+	max-width: 1176px;
+	width: 100%;
+	padding-left: 15px;
+}
+
+.hero-slider .owl-dots .owl-dot {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #383b70;
+	margin-right: 10px;
+}
+
+.hero-slider .owl-dots .owl-dot.active {
+	background: #fc0254;
+}
+.log_body
+{
+background-color: MidnightBlue;
+
+        }
+        h1
+        {
+        color: #fc0254;
+
+        }
+
+        input[type=text]
+        {
+        width: 50%;
+        padding: 12px 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        text-align:center;
+        }
+
+        input[type=password]
+        {
+        width: 50%;
+        padding: 12px 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        text-align:center;
+        }
+
+        input[type=submit]
+        {
+        width: 50%;
+        padding: 12px 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        text-align:center;
+        }
+
+        input[type=placeholder]
+        {
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+         button[type=button]
+        {
+        width: 50%;
+        padding: 12px 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        text-align:center;
+        }
+
+
+.reg_body
+ {
+        background-color: MidnightBlue;
+        }
+         h1
+            {
+            color: #fc0254;
+            text-align:center;
+            }
+        input[type=text]
+        {
+        width: 50%;
+        padding: 12px 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        text-align:center;
+        }
+        input[type=password]
+        {
+        width: 50%;
+        padding: 12px 20px;
+         display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        text-align:center;
+        }
+         input[type=email]
+        {
+        width: 50%;
+        padding: 12px 20px;
+         display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        text-align:center;
+        }
+        input[type=submit]
+        {
+        width: 50%;
+        padding: 12px 20px;
+         display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        text-align:center;
+        }
+        input[type=placeholder]
+        {
+        text-align: center;
+         display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .container
+        {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+        }
+
+.my_search_text{
+padding-top:20px;
+}
+.pro_body
+ {
+        background-color: MidnightBlue;
+        }
+         h1
+            {
+            color: #fc0254;
+            text-align:center;
+            }
+.custom-text {
+    font-size: 16px; /* Adjust the font size as needed */
+}
+
+.center_label {
+    display: block;
+    text-align: center;
+}

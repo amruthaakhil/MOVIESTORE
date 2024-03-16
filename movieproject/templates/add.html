@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container my_div">
+    <h1>Add New Movie</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="text" id="name" name="name" placeholder="Enter the Movie name" required><br>
+        <input type="text" id="desc" name="desc" rows="4" cols="50" placeholder="Enter the description here" required></input><br>
+        <input type="text" id="actors" name="actors" placeholder="Enter the Name of Actors here" required><br>
+        <label for="trailer_link" style="margin-left:40%">Trailer Link:</label>
+        <input type="url" id="trailer_link" name="trailer_link" placeholder="Copy the tailer here"><br><br>
+        <label for="release" style="margin-left:40%">Release Date:</label>
+        <input type="date" id="release" name="release" required> <br><br>
+        <label for="img" style="margin-left:40%">Image:</label>
+        <input type="file" id="img" name="img" accept="image/*" required> <br><br>
+        <select name="category" id="category" style="margin-left:40%">
+            {% for cat in links %}
+            <option value="{{cat.category_name}}">{{cat.category_name}}</option>
+            {% endfor %}
+        </select><br> <br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+{% endblock %}

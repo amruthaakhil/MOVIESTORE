@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<h1>LOGIN</h1>
+<div class="log_body">
+    <form action="/login/" method="post">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="Enter your Username" width="50" height="20"><br>
+        <input type="password" name="password" placeholder="Enter your password"><br>
+        <input type="submit"><br>
+        <button type="button" class=""btn btn-info">
+        <a href="{% url 'users:register' %}">If you are not registered yet,CLICK HERE</a> </button>
+    </form>
+</div>
+{% for msg in messages %}
+    <h2>{{msg}}</h2>
+{% endfor %}
+{% endblock %}
