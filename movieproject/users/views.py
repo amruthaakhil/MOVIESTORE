@@ -50,7 +50,6 @@ def register(request):
         email = request.POST['email']
         password = request.POST['password']
         cpassword = request.POST['password1']
-        bio = request.POST['bio']
         if password==cpassword:
             if User.objects.filter(username=username).exists():
                 messages.info(request,"Username Already Exist!")
