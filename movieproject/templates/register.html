@@ -5,13 +5,12 @@
 <div class="container reg_body">
 <form action="register" method="post">
     {% csrf_token %}
-    <input type="text" name="username" placeholder="Enter your Username"><br>
-    <input type="text" name="first_name" placeholder="Enter your First name"><br>
-    <input type="text" name="last_name" placeholder="Enter your Last name"><br>
-    <input type="email" name="email" placeholder="Enter your Email id"><br>
-    <input type="password" name="password" placeholder="Enter your Password"><br>
-    <input type="password" name="password1" placeholder="Confirm Your Password"><br>
-    <input type="text" name="bio" placeholder="Enter your Bio"><br>
+    <input type="text" name="username" placeholder="Enter your Username" required><br>
+    <input type="text" name="first_name" placeholder="Enter your First name" required><br>
+    <input type="text" name="last_name" placeholder="Enter your Last name" required><br>
+    <input type="email" name="email" placeholder="Enter your Email id" required><br>
+    <input type="password" name="password" placeholder="Enter your Password" required><br>
+    <input type="password" name="password1" placeholder="Confirm Your Password" required><br>
     <input type="submit">
 </form>
 </div>

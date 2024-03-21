@@ -28,6 +28,11 @@
           {% endfor %}
         </div>
       </li>
+      <form class="d-flex" action="{% url 'movieapp:search' %}" method="get" role="search">
+      {% csrf_token %}
+      <input class="form-control me-2" type="search" placeholder="Search" name="q" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+      </form>
       {% else %}
       <li class="nav-item">
         <a class="nav-link" href="{% url 'users:register' %}">Register</a>
@@ -37,10 +42,6 @@
       </li>
       {% endif %}
     </ul>
-    <form class="d-flex" action="{% url 'movieapp:search' %}" method="get" role="search">
-      {% csrf_token %}
-      <input class="form-control me-2" type="search" placeholder="Search" name="q" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
-    </form>
+    
   </div>
 </nav>
