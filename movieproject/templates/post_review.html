@@ -9,11 +9,13 @@
         <input type="submit"><br>
     </form>
 </div>
-<hr>
-<h2>Movie Reviews</h2>
-<ul>
-    {% for review in reviews %}
-        <li>{{ review.user.username }}: {{ review.review_text }} : {{ review.movie }}</li>
-    {% endfor %}
-</ul>
+<h1>Rating</h1>
+<div class="log_body">
+    <form action="post_rating" method="post">
+        {% csrf_token %}
+        <label for="rating_value">Rating Value:</label>
+        <input type="number" id="rating_value" name="rating_value" placeholder="Enter your rating value" min="1" max="5"><br>
+        <button type="submit">Submit Rating</button>
+    </form>
+</div>
 {% endblock %}
