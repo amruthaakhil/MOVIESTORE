@@ -17,10 +17,12 @@ def index(request):
         'movie_list':movie
     }
     return render (request,'index.html',context)
-
+    
 def details(request,movie_id):
     m=Movie.objects.get(id=movie_id)
-    return render (request,"details.html",{'movie':m})
+    reviews = Review.objects.filter(movie=m)
+    ratings = Rating.objects.filter(movie=m)
+    return render (request,"details.html",{'movie':m,'reviews': reviews, 'ratings': ratings})
 
 def add_movie(request):
     if request.method=="POST":
